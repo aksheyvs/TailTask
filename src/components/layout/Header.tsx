@@ -1,5 +1,10 @@
 function Header() {
-    return <h1>Header</h1>;
+    return (
+        <header>
+            <h1>TODO</h1>
+            <button>theme</button>
+        </header>
+    );
 }
 
 export default Header;

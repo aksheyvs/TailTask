@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+html {
+    @apply text-[62.5%];
+}
+
+body {
+    @apply font-sans text-3xl font-normal;
+}

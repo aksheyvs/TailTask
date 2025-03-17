@@ -3,9 +3,11 @@ import MainComponents from "../MainComponents";
 
 function Layout() {
     return (
-        <div>
-            <Header />
-            <MainComponents />
+        <div className="w-full pt-[5rem] pb-[5rem] bg-no-repeat bg-top-cent bg-[top_center] bg-stone-300 bg-[url(/bg-desktop-light.jpg)] text-gray-500">
+            <div className="">
+                <Header />
+                <MainComponents />
+            </div>
         </div>
     );
 }
