@@ -1,5 +1,13 @@
+import FromControl from "./main/FromControl";
+import TodoListSection from "./main/TodoListSection";
+
 function MainComponents() {
-    return <h1>Main</h1>;
+    return (
+        <main>
+            <FromControl />
+            <TodoListSection />
+        </main>
+    );
 }
 
 export default MainComponents;
