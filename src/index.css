@@ -4,6 +4,4 @@ html {
     @apply text-[62.5%];
 }
 
-body {
-    @apply font-sans text-3xl font-normal;
-}
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));

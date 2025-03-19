@@ -1,10 +1,18 @@
-import Layout from "./components/layout/Layout";
+import { Layout } from "./components/layout/Layout";
 import { TodosProvider } from "./context/TodosContext";
+import { ThemeProvider } from "./context/ThemeContext";
+import Header from "./components/layout/Header";
+import MainComponents from "./components/MainComponents";
 
 function App() {
     return (
         <TodosProvider>
-            <Layout />
+            <ThemeProvider>
+                <Layout>
+                    <Header />
+                    <MainComponents />
+                </Layout>
+            </ThemeProvider>
         </TodosProvider>
     );
 }

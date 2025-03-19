@@ -1,7 +1,19 @@
 import { ReactNode } from "react";
 
-const TodoButton = ({ onClick, children }: { onClick: () => void; children: ReactNode }) => {
-    return <button onClick={onClick}>{children}</button>;
+const TodoButton = ({
+    onClick,
+    children,
+    className,
+}: {
+    onClick: () => void;
+    children: ReactNode;
+    className: string;
+}) => {
+    return (
+        <button onClick={onClick} className={className}>
+            {children}
+        </button>
+    );
 };
 
 export default TodoButton;

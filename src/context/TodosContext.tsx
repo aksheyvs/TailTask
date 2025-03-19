@@ -43,6 +43,7 @@ export const TodosProvider = ({ children }: { children: ReactNode }) => {
 
     const clearCompleted = () => {
         setTodoArray((todos) => todos.filter((todo) => todo.completed === false));
+        setPage("all");
     };
 
     return (
